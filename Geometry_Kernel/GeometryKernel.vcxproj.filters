@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Edge.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Numerical.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Wire.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LineSegment.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ARc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Edge.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ICurve.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LineSegment.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Numerical.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Wire.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Arc.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{e25ee1e8-1f05-424b-b0c5-f4dfc7d1d37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{98cd663c-77e5-4ec8-9459-ea99bbfe7907}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
