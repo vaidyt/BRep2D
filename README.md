@@ -15,7 +15,9 @@ Currently, the app supports the following:
 ### Build and Installation
 
 $ git clone https://github.com/vaidyt/BRep2D.git
+
 $ cd BRep2D\Release
+
 $ BRep2D.exe
 
 For production environments...
