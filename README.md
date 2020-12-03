@@ -71,7 +71,7 @@ Unit_Tests:
 - lineTest.cpp - Unit tests for line segment class [mainly intersection tests with lines/arcs and distance to a point]
 - ArcTest.cpp - Unit tests for Arc class [mainly arc and line segment intersection tests]
 - WireTest.cpp - Unit tests for Wire class [mainly serialization/deserialization tests]
-- 
+
 Plot Script:
 - drawGeometry.m - Contains a simple MATLAB script to visualize the input and output files
 - RoundedRectangle.Txt / BowTie.out - Input / Output file for the Rounded Rectangle Geometry
