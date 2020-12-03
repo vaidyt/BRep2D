@@ -23,6 +23,7 @@ d: Mimum (chord) distance for discretization (indirectly determining the mesh si
 -----------------------------------------------------------------------------------------------------------------------------
 
 Note on Input File Format:
+--------------------------
 
 The format is extremely simple:
 
@@ -33,9 +34,12 @@ Here, L denotes a line segment and C denote quadrant of a curve.
 (x1,y1) is the starting coordinate of  line or quad-circle
 
 (x2,y2) is the ending coordinate of of line or quad-circle
+
 -----------------------------------------------------------------------------------------------------------------------------
 
+
 Location of Executable:
+-----------------------
 
 You will find BRep.CLI.exe in the release folder - https://github.com/vaidyt/BRep2D/tree/main/Release
 
