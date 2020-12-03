@@ -5,7 +5,7 @@ BRep2D is a C++ app for doing simple geometric computations over simple 1D/2D ge
 Currently, the app supports the following:
   - line segment Vs line segment intersection (test and point of intersection computation)
   - line segment vs arc intersection (test and point of intersection computation)
-  - Distance to a point from a line
+  - Distance of a line/line segment from a point in 2D (and 3D)
   - Discretization of a circular arc (given some measure of mesh size using a distance parameter 'd')
   - Serialization of geometric objects (i.e. line/arc) in to strings
   - Deserialization of strings back to geometric objects (i.e. line/arc)
