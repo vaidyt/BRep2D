@@ -1,58 +1,75 @@
 # BRep2D
-2D Boundary Representation
 
------------------------------------------------------------------------------------------------------------------------------
+BRep2D is a C++ app for doing simple geometric computations over simple 1D/2D geometric objects.
 
-BRep.CLI.exe (the main client application) has 2 modes of running:
+Currently, the app supports the following:
+  - line segment Vs line segment intersection (test and point of intersection computation)
+  - line segment vs arc intersection (test and point of intersection computation)
+  - Distance to a point from a line
+  - Discretization of a circular arc (given some measure of mesh size using a distance parameter 'd')
+  - Serialization of geometric objects (i.e. line/arc) in to strings
+  - Deserialization of strings back to geometric objects (i.e. line/arc)
+  
+# 
 
-Mode 1 (without parameters): 
-----------------------------
+### Build and Installation
 
-You can simply run it without any parameters and it will do all the things that were asked for in the take home challenge.
+$ git clone https://github.com/vaidyt/BRep2D.git
+$ cd BRep2D\Release
+$ BRep2D.exe
 
-Brep.CLI 
+For production environments...
 
+```sh
+$ cd BRep2D
+$ VS FormLogicChallenge.sln
+```
 
-Mode 2 (with parameters): 
---------------------------
+Then from Visual Studio 2019 build the following:
+- Geometric_Kernel Project [Builds the Geometric_Kernel.lib static library]
+- Unit_Test Project (Optional) [Builds the 40+ unit tests for a variety of geometric algorithms]
+- BRep2D.CLI Project [Builds the CLI app or exe for performing geometric computations]
 
-Brep.CLI [infile] [d]
+### Usage
+```sh
+$ BRep2D.exe <infileName> <d>
+```
+- infile: Input file name describing the 2D geometry as a list of strings (format: (x1,y1) (x2,y2))
+- d: Minimum (chord) distance for discretization (indirectly determining the mesh size) [default value : 0.01]
 
-infile: Input file name describing the 2D geometry as a list of strings (format: <L or C> (x1,y1) (x2,y2))
+Mode 1 (no parameters):
+```sh
+$ BRep2D.exe
+```
 
-d: Mimum (chord) distance for discretization (indirectly determining the mesh size)
+Mode 2 (with one or two parameters):
 
------------------------------------------------------------------------------------------------------------------------------
+```sh
+$ BRep2D.exe BoxTie.txt 0.001
+```
 
-Note on Input File Format:
---------------------------
+#### Description of Projects
+Geometric_Kernel:
+- Vector.h / Vector.cpp - Models a Vector in 2D (and 3D)
+- Point.h / Point.cpp - Models a Point in 2D (and 3D)
+- ICurve.h - Abstract base class from which LineSegment and Arc class are derived from
+- LineSegment.h / LineSegment.cpp - Models a line segement in 2D
+- Arc.h / Arc.cpp - Models a circular arc [t <= 0 < 2*pi] in 2D
+- Vertex.h / Vertex.cpp - Models a vertex in 2D (and 3D)
+- Edge.h / Edge.cpp - Models an edge that can point to any geometric curve in 2D (of type ICurve*)
+- Wire.h / Wire.cpp - Models a wire i.e. one or more edges representing a curves in 2D
 
-The format is extremely simple:
+Unit_Tests:
+- lineTest.cpp - Unit tests for line segment class [mainly intersection tests with lines/arcs and distance to a point]
+- ArcTest.cpp - Unit tests for Arc class [mainly arc and line segment intersection tests]
+- WireTest.cpp - Unit tests for Wire class [mainly serialization/deserialization tests]
 
-L (or C) (x1,y1) (x2,y2)
+### Todos
 
-Here, L denotes a line segment and C denote quadrant of a curve.
+ - Add unit tests for arc discretization
+ - Add unit tests for generic arc vs arc and arc vs line intersection
 
-(x1,y1) is the starting coordinate of  line or quad-circle
+License
+----
 
-(x2,y2) is the ending coordinate of of line or quad-circle
-
------------------------------------------------------------------------------------------------------------------------------
-
-
-Location of Executable:
------------------------
-
-You will find BRep.CLI.exe in the release folder - https://github.com/vaidyt/BRep2D/tree/main/Release
-
-
-Example Usage (Mode 1):
------------------------
-
-BRep.CLI
-
-
-Example Usage (Mode 2):
------------------------
-
-BRep.CLI BowTie.txt 0.01
+MIT
