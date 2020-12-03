@@ -6,6 +6,7 @@
 BRep.CLI.exe (the main client application) has 2 modes of running:
 
 Mode 1 (without parameters): 
+----------------------------
 
 You can simply run it without any parameters and it will do all the things that were asked for in the take home challenge.
 
@@ -13,6 +14,7 @@ Brep.CLI
 
 
 Mode 2 (with parameters): 
+--------------------------
 
 Brep.CLI [infile] [d]
 
