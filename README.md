@@ -18,7 +18,7 @@ Currently, the app supports the following:
 ```sh
 $ git clone https://github.com/vaidyt/BRep2D.git
 $ cd BRep2D\Release
-$ BRep2D.exe
+$ BRep.CLI
 ```
 
 For production environments...
@@ -36,7 +36,7 @@ Then from Visual Studio 2019 build the following:
 
 ### Usage
 ```sh
-$ BRep2D.exe <infileName> <d>
+$ BRep.CLI <infileName> <d>
 ```
 - infile: Input file name describing the 2D geometry as a list of strings (format: (x1,y1) (x2,y2))
 - d: Minimum (chord) distance for discretization (indirectly determining the mesh size) [default value : 0.01]
@@ -46,7 +46,7 @@ $ BRep2D.exe <infileName> <d>
 Mode 1 simply solves all the problems in Formlogic take-home challenge for both Rounded Rectangle an  Bow Tie Geometry!
 
 ```sh
-$ BRep2D.exe
+$ BRep.CLI
 ```
 
 #### Mode 2 (with one or two parameters):
@@ -54,7 +54,7 @@ $ BRep2D.exe
 Mode 2 can be used to run the program for any user defined input defined via an input file with an optional distance parametr 'd' for discretization of curves. When the distance parameter (i.e. second parameter) is ignored, d is defaulted to a value of 0.01.
 
 ```sh
-$ BRep2D.exe BoxTie.txt 0.001
+$ BRep.CLI BoxTie.txt 0.001
 ```
 
 #### Description of Projects
