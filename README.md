@@ -9,7 +9,8 @@ Currently, the app supports the following:
   - Discretization of a circular arc (given some measure of mesh size using a distance parameter 'd')
   - Serialization of geometric objects (i.e. line/arc) in to strings
   - Deserialization of strings back to geometric objects (i.e. line/arc)
-  - Represent a collection of line segments/ curves as a wire data structure (with topological notions of Edges and Vertices built in)
+  - Represent a collection of line segments/ curves as a wire object (with topological notions of Edges and Vertices built in)
+  - Perform self-intersection test and discretization of any given wire object
   
 # 
 
