@@ -5,17 +5,20 @@
 
 BRep.CLI.exe (the main client application) has 2 modes of running:
 
-Mode 1: 
-
-> Brep.CLI 
+Mode 1 (without parameters): 
 
 You can simply run it without any parameters and it will do all the things that were asked for in the take home challenge.
 
-Mode 2: 
+Brep.CLI 
 
-> Brep.CLI <infile> <d>
-              infile: Input file name describing the 2D geometry as a list of strings (format: <L or C> (x1,y1) (x2,y2))
-              d: Mimum (chord) distance for discretization (indirectly determining the mesh size)
+
+Mode 2 (with parameters): 
+
+Brep.CLI [infile] [d]
+
+infile: Input file name describing the 2D geometry as a list of strings (format: <L or C> (x1,y1) (x2,y2))
+
+d: Mimum (chord) distance for discretization (indirectly determining the mesh size)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
@@ -40,10 +43,10 @@ You will find BRep.CLI.exe in the release folder - https://github.com/vaidyt/BRe
 Example Usage (Mode 1):
 -----------------------
 
-> BRep.CLI
+BRep.CLI
 
 
 Example Usage (Mode 2):
 -----------------------
 
-> BRep.CLI BowTie.txt 0.01
+BRep.CLI BowTie.txt 0.01
