@@ -25,7 +25,7 @@ For production environments...
 
 ```sh
 $ cd BRep2D
-$ C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv FormLogicChallenge.sln
+$ "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" FormLogicChallenge.sln
 ```
 Alternatively, you can simply open FormLogicChallenge.sln using Visual Studio (VS 2019) by double clicking on it (from the explorer). 
 
