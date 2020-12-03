@@ -25,8 +25,9 @@ For production environments...
 
 ```sh
 $ cd BRep2D
-$ VS FormLogicChallenge.sln
+$ C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv FormLogicChallenge.sln
 ```
+Alternatively, you can simply open FormLogicChallenge.sln using Visual Studio (VS 2019) by double clicking on it (from the explorer). 
 
 Then from Visual Studio 2019 build the following:
 - Geometric_Kernel Project [Builds the Geometric_Kernel.lib static library]
