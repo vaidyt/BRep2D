@@ -40,7 +40,7 @@ $ BRep2D.exe <infileName> <d>
 - infile: Input file name describing the 2D geometry as a list of strings (format: (x1,y1) (x2,y2))
 - d: Minimum (chord) distance for discretization (indirectly determining the mesh size) [default value : 0.01]
 
-Mode 1 (no parameters):
+#### Mode 1 (no parameters):
 
 Mode 1 simply solves all the problems in Formlogic take-home challenge for both Rounded Rectangle an  Bow Tie Geometry!
 
@@ -48,7 +48,7 @@ Mode 1 simply solves all the problems in Formlogic take-home challenge for both 
 $ BRep2D.exe
 ```
 
-Mode 2 (with one or two parameters):
+#### Mode 2 (with one or two parameters):
 
 Mode 2 can be used to run the program for any user defined input defined via an input file with an optional distance parametr 'd' for discretization of curves. When the distance parameter (i.e. second parameter) is ignored, d is defaulted to a value of 0.01.
 
