@@ -41,11 +41,16 @@ $ BRep2D.exe <infileName> <d>
 - d: Minimum (chord) distance for discretization (indirectly determining the mesh size) [default value : 0.01]
 
 Mode 1 (no parameters):
+
+Mode 1 simply solves all the problems in Formlogic take-home challenge for both Rounded Rectangle an  Bow Tie Geometry!
+
 ```sh
 $ BRep2D.exe
 ```
 
 Mode 2 (with one or two parameters):
+
+Mode 2 can be used to run the program for any user defined input defined via an input file with an optional distance parametr 'd' for discretization of curves. When the distance parameter (i.e. second parameter) is ignored, d is defaulted to a value of 0.01.
 
 ```sh
 $ BRep2D.exe BoxTie.txt 0.001
@@ -66,8 +71,13 @@ Unit_Tests:
 - lineTest.cpp - Unit tests for line segment class [mainly intersection tests with lines/arcs and distance to a point]
 - ArcTest.cpp - Unit tests for Arc class [mainly arc and line segment intersection tests]
 - WireTest.cpp - Unit tests for Wire class [mainly serialization/deserialization tests]
+- 
+Plot Script:
+- drawGeometry.m - Contains a simple MATLAB script to visualize the input and output files
+- RoundedRectangle.Txt / BowTie.out - Input / Output file for the Rounded Rectangle Geometry
+- BowTie.Txt / BowTie.out - Input / Output file for the BowTie Geometry
 
-### Todos
+### TODOs
 
  - Add unit tests for arc discretization
  - Add unit tests for generic arc vs arc and arc vs line intersection
