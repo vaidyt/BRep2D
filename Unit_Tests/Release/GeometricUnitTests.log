@@ -1,0 +1,10 @@
+﻿  pch.cpp
+C:\Users\50528705\Desktop\Tests\LatestCode\BRep2D\Geometry_Kernel\StringHelper.h(117,32): warning C4018: '<': signed/unsigned mismatch
+  lineTest.cpp
+  ArcTest.cpp
+  WireTest.cpp
+  Generating Code...
+  GeometryKernel.lib(Point.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+  GeometricUnitTests.vcxproj -> C:\Users\50528705\Desktop\Tests\LatestCode\BRep2D\Release\UnitTests.exe

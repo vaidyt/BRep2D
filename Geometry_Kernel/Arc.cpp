@@ -52,7 +52,7 @@ namespace Geometry
 
 	double Arc::getLength() const
 	{
-		return pi * m_radius / 2;
+		return m_radius * (m_t2 - m_t1);
 	}
 
 	CurveType Arc::getType() const
