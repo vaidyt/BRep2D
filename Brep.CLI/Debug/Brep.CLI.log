@@ -1,0 +1,4 @@
+﻿  Brep.CLI.cpp
+C:\Users\50528705\Desktop\Tests\LatestCode\BRep2D\Geometry_Kernel\StringHelper.h(117,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\50528705\Desktop\Tests\LatestCode\BRep2D\Brep.CLI\Brep.CLI.cpp(13,21): warning C4018: '<': signed/unsigned mismatch
+  Brep.CLI.vcxproj -> C:\Users\50528705\Desktop\Tests\LatestCode\BRep2D\Debug\Brep.CLI.exe
