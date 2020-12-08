@@ -167,7 +167,7 @@ void displayUsage()
 {
 	std::cout << "Usage: Brep.CLI <infile> <d>" << std::endl;
 	std::cout << "infile: Input file name describing the 2D geometry as a list of strings (format: <L or C> (x1,y1) (x2,y2))" << std::endl;
-	std::cout << "d: Mimum (chord) distance for discretization (indirectly determining the mesh size)" << std::endl;
+	std::cout << "d: Minimum (chord) distance for discretization (indirectly determining the mesh size)" << std::endl;
 }
 
 
