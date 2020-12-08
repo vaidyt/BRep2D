@@ -325,7 +325,7 @@ namespace Geometry
 	
 	void Arc::discretize(double d, std::vector<LineSegment> & q) const
 	{
-		if (d > m_radius || d < 0)
+		if (d > m_radius || d <= 0)
 		{
 			// This is physically meaningless
 			// set d to m_radius
