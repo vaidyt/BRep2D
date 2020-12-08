@@ -44,7 +44,7 @@ $ BRep.CLI <infileName> <d>
 
 #### Mode 1 (no parameters):
 
-Mode 1 simply solves all the problems in Formlogic take-home challenge for both Rounded Rectangle an  Bow Tie Geometry!
+Mode 1 simply solves all the problems in Formlogic take-home challenge for both Rounded Rectangle and  Bow Tie Geometry!
 
 ```sh
 $ BRep.CLI
@@ -76,7 +76,7 @@ Unit_Tests:
 
 Plot Script:
 - drawGeometry.m - Contains a simple MATLAB script to visualize the input and output files
-- RoundedRectangle.Txt / BowTie.out - Input / Output file for the Rounded Rectangle Geometry
+- RoundedRectangle.Txt / RoundedRectangle.out - Input / Output file for the Rounded Rectangle Geometry
 - BowTie.Txt / BowTie.out - Input / Output file for the BowTie Geometry
 
 ### TODOs
