@@ -207,9 +207,9 @@ int main(int argc, char **argv)
 				}
 
 				d = StringHelper::toDouble(dStr);
-				if (d < 0)
+				if (d <= 0)
 				{
-					std::cout << "Error: parameter 'd' cannot be negative" << std::endl;
+					std::cout << "Error: parameter 'd' cannot be zero or negative" << std::endl;
 					displayUsage();
 					return 0;
 				}
