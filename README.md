@@ -64,10 +64,10 @@ Geometric_Kernel:
 - Point.h / Point.cpp - Models a Point in 2D (and 3D)
 - ICurve.h - Abstract base class from which LineSegment and Arc class are derived from
 - LineSegment.h / LineSegment.cpp - Models a line segement in 2D
-- Arc.h / Arc.cpp - Models a circular arc [t <= 0 < 2*pi] in 2D
+- Arc.h / Arc.cpp - Models a circular arc [0 <= t <= < 2*pi] in 2D
 - Vertex.h / Vertex.cpp - Models a vertex in 2D (and 3D)
 - Edge.h / Edge.cpp - Models an edge that can point to any geometric curve in 2D (of type ICurve*)
-- Wire.h / Wire.cpp - Models a wire i.e. one or more edges representing a curves in 2D
+- Wire.h / Wire.cpp - Models a wire i.e. one or more edges representing one or more curves in 2D
 
 Unit_Tests:
 - lineTest.cpp - Unit tests for line segment class [mainly intersection tests with lines/arcs and distance to a point]
